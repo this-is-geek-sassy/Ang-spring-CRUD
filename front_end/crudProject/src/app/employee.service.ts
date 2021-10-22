@@ -14,6 +14,6 @@ export class EmployeeService {
 
   getEmployeeList(): Observable<Array<Employee>> {
     // Ajax call
-    return this.httpClient.get<Array<Employee>>(this.url);
+    return this.httpClient.get<Employee[]>(this.url);
   }
 }
