@@ -9,7 +9,7 @@ import { Employee } from './employee';
 export class EmployeeService {
 
   // listOfEmployees!: Array<Employee>;
-  private url = "";
+  private url = "http://localhost:8080/";
   constructor(private httpClient: HttpClient) { }
 
   getEmployeeList(): Observable<Array<Employee>> {
